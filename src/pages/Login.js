@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import { useAuthDispatch } from '../context/auth';
 import { useAuthState } from '../context/auth';
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Login() {
 
@@ -30,12 +32,23 @@ export default function Login() {
 			
 		
 			if (res.status === 200) {
+			
+				toast.success('Success', {
+					position: 'top-right',
+					autoClose: 5000,
+					draggable: false
+				});
 			  
 			  dispatch({ type:'LOGIN', payload: res.data.token });
 			  
-			  window.location.replace('/Users');
+			  window.location.replace('/');
 			}
 			} catch (err) {
+				toast.error(err.response.data.message, {
+					position: 'top-right',
+					autoClose: 5000,
+					draggable: true
+				});
 				console.log(err);
 			}
 	}
@@ -44,6 +57,8 @@ export default function Login() {
     return (
         <main className="d-flex w-100">
 		<div className="container d-flex flex-column">
+		<ToastContainer/>
+			
 			<div className="row vh-100">
 				<div className="col-sm-10 col-md-8 col-lg-6 mx-auto d-table h-100">
 					<div className="d-table-cell align-middle">

@@ -49,7 +49,7 @@ export default function Users() {
 					autoClose: 5000,
 					draggable: false
 				});
-				window.location.replace('/Users');
+				window.location.replace('/');
 			}
 
 			} catch (err) {

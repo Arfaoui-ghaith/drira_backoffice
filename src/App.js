@@ -33,7 +33,7 @@ function App() {
             <DynamicRoutes exact path="/Login" component={Login} guest />
             
             <DynamicRoutes exact path="/Features" component={Feature} authenticated/>
-            <DynamicRoutes exact path="/Users" component={Users} authenticated/>
+            <DynamicRoutes exact path="/" component={Users} authenticated/>
             <DynamicRoutes exact path="/Landings" component={Landing} authenticated/>
             <DynamicRoutes exact path="/Services" component={Service} authenticated/>
             <DynamicRoutes exact path="/Members" component={Member} authenticated/>

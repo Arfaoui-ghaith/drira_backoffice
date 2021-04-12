@@ -24,22 +24,22 @@ export default function Sidebar(props) {
 						Menu
 					</li>
 					
-					<SidebarItem title="Users" icon="users" l="/Users" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
+					<SidebarItem title="Users" icon="users" l="/" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
 					
 
-					<SidebarItem title="Features" icon="briefcase" l="/Features" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
+					<SidebarItem title="Features" icon="check-square" l="/Features" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
 					
 
-					<SidebarItem title="Landings" icon="layout" l="/Landings" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
+					<SidebarItem title="Landings" icon="flag" l="/Landings" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
 				
 
-					<SidebarItem title="Services" icon="layout" l="/Services" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
+					<SidebarItem title="Services" icon="box" l="/Services" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
 
 
-					<SidebarItem title="Members" icon="layout" l="/Members" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
+					<SidebarItem title="Members" icon="star" l="/Members" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
 
 
-					<SidebarItem title="Partners" icon="layout" l="/Partners" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
+					<SidebarItem title="Partners" icon="pocket" l="/Partners" selecteditem={selectedItem} setselecteditem={setSelectedItem} />
 
 				
 					<SidebarItem title="deconnection" icon="log-out" l="/login" selecteditem={selectedItem} setselecteditem={setSelectedItem} />

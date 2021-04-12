@@ -22,7 +22,7 @@ export default function UserForm({ user }) {
                 autoClose: 5000,
                 draggable: false
             });
-            window.location.replace('/Users');
+            window.location.replace('/');
 
 			} catch (err) {
                 toast.error(err.response.data.message, {
@@ -49,7 +49,7 @@ export default function UserForm({ user }) {
                 autoClose: 5000,
                 draggable: false
             });
-            window.location.replace('/Users');
+            window.location.replace('/');
 
 			} catch (err) {
                 toast.error(err.response.data.message, {
